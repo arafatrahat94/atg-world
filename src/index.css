@@ -1,0 +1,19 @@
+@media (min-width: 0px) and (max-width: 500px) {
+  .banner-height {
+    max-width: 1440px;
+    height: 236px;
+    /* background-color: black; */
+    /* Set the height for lg screens */
+  }
+}
+@media (min-width: 992px) and (max-width: 2000px) {
+  .banner-height {
+    max-width: 1440px;
+    height: 440px; /* Set the height for lg screens */
+  }
+  .bannerText {
+    position: relative;
+    bottom: 140px;
+    color: white;
+  }
+}
