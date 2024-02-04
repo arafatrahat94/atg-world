@@ -1,9 +1,10 @@
+import { FaArrowLeft } from "react-icons/fa";
 import bg from "../assets/bg.svg";
 import bgG from "../assets/Rectangle 3.png";
 const Banner = () => {
   return (
     <div>
-      <div className=" banner-height w-100 ">
+      <div className="position-relative banner-height w-100 ">
         <img
           style={{
             backgroundImage: `url("${bg}")`,
@@ -15,18 +16,44 @@ const Banner = () => {
           src={bgG}
           alt=""
         />
+        <FaArrowLeft
+          className="d-lg-none"
+          style={{
+            position: "absolute",
+            top: "16px",
+            left: "16px",
+            color: "white",
+          }}
+        />
+        <button
+          style={{
+            border: "1px solid white",
+            color: "white",
+            position: "absolute",
+            top: "16px",
+            right: "16px",
+            fontSize: "14px",
+            borderRadius: "5px",
+            backgroundColor: "transparent",
+          }}
+          className="px-3 d-lg-none p-1 "
+        >
+          Join Group
+        </button>
         <div
-          //   style={{ maxWidth: "1080px", color: "white" }}
+          style={{ maxWidth: "1080px", color: "white" }}
           className="mx-xl-auto ms-4 ms-lg-5   bannerText"
         >
-          {/* <h1 className="d-lg-hidden" style={{ fontSize: "14.73px" }}>
+          <h1 className="d-lg-none" style={{ fontSize: "16.73px" }}>
             Computer Engineering
           </h1>
-          <p className="d-lg-hidden" style={{ fontSize: "18px" }}>
+          <p className="d-lg-none" style={{ fontSize: "11px" }}>
             142,765 Computer Engineers follow this
-          </p> */}
-          <h1>Computer Engineering</h1>
-          <p>142,765 Computer Engineers follow this</p>
+          </p>
+          <h1 className="d-none d-lg-block">Computer Engineering</h1>
+          <p className="d-none d-lg-block">
+            142,765 Computer Engineers follow this
+          </p>
         </div>
       </div>
     </div>

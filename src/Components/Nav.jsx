@@ -1,15 +1,24 @@
 import logo from "../assets/whole.svg";
 import { AiOutlineCaretDown } from "react-icons/ai";
-import { FaSearch } from "react-icons/fa";
+import { FaCircle, FaSearch, FaSquare } from "react-icons/fa";
+import { IoTriangleSharp } from "react-icons/io5";
 const Nav = () => {
   return (
     <div>
+      <div
+        style={{ height: "24px", fontSize: "12px", color: "#868E96" }}
+        className="d-flex d-lg-none justify-content-end align-items-center column-gap-1 me-2 "
+      >
+        <FaSquare />
+        <FaCircle />
+        <IoTriangleSharp style={{ rotate: "180deg" }} />
+      </div>
       <div
         style={{ height: "72px" }}
         className=" d-none d-lg-flex mx-5 align-items-center justify-content-between"
       >
         <img src={logo} alt="" />
-        <div className="col-xl-4 d-flex  position-relative">
+        <div className="col-lg-5 col-xl-4 d-flex  position-relative">
           <FaSearch
             style={{
               top: "13px",

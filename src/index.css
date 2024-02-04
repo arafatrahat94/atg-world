@@ -5,7 +5,22 @@
     /* background-color: black; */
     /* Set the height for lg screens */
   }
+  .bannerText {
+    position: relative;
+    bottom: 80px;
+    color: white;
+  }
+  .postImg {
+    border-radius: "10px 10px 0px 0px";
+  }
+  .postCard {
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    border-left: 0;
+    border-right: 0;
+  }
 }
+
 @media (min-width: 992px) and (max-width: 2000px) {
   .banner-height {
     max-width: 1440px;
@@ -16,4 +31,18 @@
     bottom: 140px;
     color: white;
   }
+  .postImg {
+    border-radius: "0px 0px 0px 0px";
+    border: none;
+  }
+  .postCard {
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+  }
+}
+
+.btn-check:checked {
+  color: var(--bs-btn-active-color);
+  background-color: #f1f3f5;
+  border-color: var(--bs-btn-active-border-color);
 }
