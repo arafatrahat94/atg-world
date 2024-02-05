@@ -2,11 +2,14 @@ import { AiOutlineCaretDown } from "react-icons/ai";
 import { MdGroupAdd } from "react-icons/md";
 import postBg from "../assets/postbg.svg";
 import postProfile from "../assets/postProfile.svg";
-import { BsThreeDots } from "react-icons/bs";
+import { BsExclamationCircle, BsThreeDots } from "react-icons/bs";
 import { LuEye } from "react-icons/lu";
 import { IoShareSocialSharp } from "react-icons/io5";
 import Dropdown from "react-bootstrap/Dropdown";
 import DropdownButton from "react-bootstrap/DropdownButton";
+import { SlLocationPin } from "react-icons/sl";
+import { BiSolidPencil } from "react-icons/bi";
+import { ImPencil } from "react-icons/im";
 const Post = () => {
   return (
     <div
@@ -92,8 +95,11 @@ const Post = () => {
         style={{ height: "1px", background: "#E0E0E0", marginBottom: "28px" }}
         className="my-2"
       ></div>
-      <div>
-        <div className="postwidth" style={{ maxWidth: "692px" }}>
+      <div className="row  g-0">
+        <div
+          className="postwidth cols-6 col-lg-9"
+          style={{ maxWidth: "692px" }}
+        >
           <div className="my-4 postCard ">
             <img
               className="object-fit-cover w-100 h-100 postImg"
@@ -279,6 +285,50 @@ const Post = () => {
             </div>
           </div>
         </div>
+        <div className="col d-none position-relative d-lg-block p-5">
+          <SlLocationPin
+            style={{ top: "61px", position: "absolute" }}
+            className=" "
+          />
+          <BiSolidPencil
+            style={{
+              top: "61px",
+              fontSize: "20px",
+              position: "absolute",
+              right: "50px",
+            }}
+            className=" "
+          />
+          <input
+            style={{ borderBottom: "1px solid #B8B8B8" }}
+            placeholder="Noida, India"
+            className="w-100 border-top-0 border-start-0  px-4 border-end-0 py-2"
+            type="text"
+            name=""
+            id=""
+          />
+          <div
+            style={{ color: "#000000" }}
+            className="d-flex mt-3 column-gap-2"
+          >
+            <BsExclamationCircle className="fs-2" />
+            <h1 style={{ fontSize: "14px" }} className=" fw-normal ">
+              Your location will help us serve better and extend a personalised
+              experience.
+            </h1>
+          </div>
+        </div>
+      </div>
+      <div
+        style={{
+          backgroundImage: "linear-gradient(#FF5C5C,#F0568A)",
+          width: "54px",
+          height: "54px",
+          marginLeft: "82%",
+        }}
+        className="align-items-center text-white fixed-bottom d-flex  justify-content-center d-lg-none  mb-2 tool rounded-5 bottom-5"
+      >
+        <ImPencil />
       </div>
     </div>
   );
