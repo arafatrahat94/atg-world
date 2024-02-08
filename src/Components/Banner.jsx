@@ -25,21 +25,7 @@ const Banner = () => {
             color: "white",
           }}
         />
-        <button
-          style={{
-            border: "1px solid white",
-            color: "white",
-            position: "absolute",
-            top: "16px",
-            right: "16px",
-            fontSize: "14px",
-            borderRadius: "5px",
-            backgroundColor: "transparent",
-          }}
-          className="px-3 d-lg-none p-1 "
-        >
-          Join Group
-        </button>
+
         <div
           style={{ maxWidth: "1080px", color: "white" }}
           className="mx-xl-auto ms-4 ms-lg-5   bannerText"

@@ -5,6 +5,16 @@
     /* background-color: black; */
     /* Set the height for lg screens */
   }
+  .ReactModal__Content {
+    width: 100%;
+    height: 473px;
+    position: fixed;
+    padding: 0px !important;
+    bottom: 133px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .bannerText {
     position: relative;
     bottom: 80px;
@@ -22,6 +32,22 @@
 }
 
 @media (min-width: 992px) and (max-width: 2000px) {
+  .btnw {
+    width: 100%;
+  }
+  .ReactModal__Content {
+    width: 680px;
+    height: 443px;
+    padding: 0px !important;
+    /* top: 13px; */
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+  }
   .banner-height {
     max-width: 1440px;
     height: 440px; /* Set the height for lg screens */
@@ -40,9 +66,15 @@
     border-radius: 4px;
   }
 }
-
+.outlineN:focus {
+  outline: none;
+}
 .btn-check:checked {
   color: var(--bs-btn-active-color);
   background-color: #f1f3f5;
   border-color: var(--bs-btn-active-border-color);
+}
+
+.ReactModal__Overlay {
+  background-color: #00000096 !important;
 }
