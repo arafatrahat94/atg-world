@@ -164,6 +164,7 @@ const Nav = () => {
           <FaSearch
             style={{
               left: "20px",
+              top: "13px",
               color: "rgba(0, 0, 0, 0.5)",
             }}
             className="position-absolute "
