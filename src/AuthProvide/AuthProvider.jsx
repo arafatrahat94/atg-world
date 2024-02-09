@@ -52,6 +52,9 @@ const AuthProvider = ({ children }) => {
               setUser(res?.data);
             });
         }, 5000);
+      } else {
+        setUser(null);
+        LogOut();
       }
     });
     return () => unSub();
