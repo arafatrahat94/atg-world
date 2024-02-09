@@ -20,6 +20,7 @@ const Nav = () => {
       bottom: "auto",
       marginRight: "-50%",
       transform: "translate(-50%, -50%)",
+      zIndex: "3",
     },
   };
   const [email, setEmail] = useState("");

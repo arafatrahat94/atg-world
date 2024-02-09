@@ -5,6 +5,9 @@
     /* background-color: black; */
     /* Set the height for lg screens */
   }
+  .btnw {
+    font-size: 10px;
+  }
   .ReactModal__Content {
     width: 100%;
     height: 473px;
@@ -37,6 +40,19 @@
   }
   .ReactModal__Content {
     width: 680px;
+    height: 443px;
+    padding: 0px !important;
+    /* top: 13px; */
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+  }
+  .ReactModal__Content2 {
+    width: 480px;
     height: 443px;
     padding: 0px !important;
     /* top: 13px; */

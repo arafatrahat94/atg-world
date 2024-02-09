@@ -56,7 +56,8 @@ const AuthProvider = ({ children }) => {
     });
     return () => unSub();
   }, []);
-  console.log(user);
+  console.log(user && user[0]?.name);
+
   const authData = {
     user,
     createNew,
